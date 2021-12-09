@@ -1,6 +1,6 @@
 import random
 import numpy as np
-from find_best_tr import return_ks
+# from find_best_tr import return_ks
 
 #################################### DO NOT CHANGE !!!!! ##################################################
 u_param = 0.2
@@ -108,12 +108,13 @@ def uncertainity(a, u_param = 0.2):
         # a[i] = a[i]*
     return a
 
-# specs after fastest rise time
-_o_kd_alt, _o_kp_alt, _o_kdc_lat, _o_kd_lat, _o_kp_lat = return_ks(10.47, 10.47)
+# # specs after fastest rise time
+# _o_kd_alt, _o_kp_alt, _o_kdc_lat, _o_kd_lat, _o_kp_lat = return_ks(10.47, 10.47)
 
-_ell = 0.707
+_damp = 0.707
 
-_o_kd_theta, _o_kp_theta = (2*0.707*2.2/1.047)*0.068436, ((2.2/1.047)**2)*0.068436 
-_o_ki_lat = 0.0001
-_o_ki_alt = 0
+
+# _o_kd_theta, _o_kp_theta = (2*0.707*2.2/1.047)*0.068436, ((2.2/1.047)**2)*0.068436 
+# _o_ki_lat = 0.0001
+# _o_ki_alt = 0
 
